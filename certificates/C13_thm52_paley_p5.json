@@ -1,0 +1,10 @@
+{
+  "schema": "EQUIANGULAR-D18-20-CERT-1.0",
+  "id": "C13_thm52_paley_p5",
+  "mode": "conference_and_cosine_1_7",
+  "submode": "thm52_paley_conference",
+  "prime_p": 5,
+  "repeat_t": 2,
+  "claimed_dim": 9,
+  "claimed_lines": 12
+}

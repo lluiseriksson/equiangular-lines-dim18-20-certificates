@@ -1,0 +1,17 @@
+{
+  "schema": "EQUIANGULAR-D18-20-CERT-1.0",
+  "id": "C05_golay24_lemma48_weights",
+  "mode": "leech_evaluation_code_dim20",
+  "submode": "golay_and_lemma48",
+  "claimed_nonzero_weights": [
+    100,
+    112,
+    128,
+    132,
+    144,
+    148,
+    164,
+    176,
+    276
+  ]
+}

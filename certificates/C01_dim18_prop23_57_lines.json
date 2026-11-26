@@ -1,0 +1,9 @@
+{
+  "schema": "EQUIANGULAR-D18-20-CERT-1.0",
+  "id": "C01_dim18_prop23_57_lines",
+  "mode": "dim18_construction_and_reduction",
+  "submode": "prop23_57_lines",
+  "num_lines": 57,
+  "ambient_dim": 18,
+  "inv_cosine_q": 5
+}

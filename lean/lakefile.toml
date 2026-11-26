@@ -1,0 +1,5 @@
+name = "EquiangularDim1820Cert"
+defaultTargets = ["EquiangularDim1820Cert"]
+
+[[lean_lib]]
+name = "EquiangularDim1820Cert"

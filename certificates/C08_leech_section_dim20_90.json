@@ -1,0 +1,9 @@
+{
+  "schema": "EQUIANGULAR-D18-20-CERT-1.0",
+  "id": "C08_leech_section_dim20_90",
+  "mode": "leech_evaluation_code_dim20",
+  "submode": "nested_sharp_sections",
+  "section_dim": 20,
+  "claimed_num_axes": 90,
+  "claimed_generalized_hamming_weight": 186
+}

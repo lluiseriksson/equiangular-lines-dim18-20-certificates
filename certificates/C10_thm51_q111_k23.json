@@ -1,0 +1,12 @@
+{
+  "schema": "EQUIANGULAR-D18-20-CERT-1.0",
+  "id": "C10_thm51_q111_k23",
+  "mode": "fixed_angle_intervals_thm51",
+  "inv_cosine_q": 111,
+  "excess_k": 23,
+  "claimed_t": 2,
+  "claimed_r": 0,
+  "claimed_d_minus": 529,
+  "claimed_d_plus": 539,
+  "verify_explicit_seidel_gram": false
+}

@@ -1,0 +1,9 @@
+[project]
+name = "equiangular-lines-dim18-20-certificates"
+version = "1.0.0"
+description = "Formal Certification of Real Equiangular Lines in Dimensions 18-20 and Fixed-Angle Bounds (arXiv:2611.34855)"
+requires-python = ">=3.10"
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]

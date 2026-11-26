@@ -1,0 +1,13 @@
+{
+  "schema": "EQUIANGULAR-D18-20-CERT-1.0",
+  "id": "C04_lemma13_dim20_leech",
+  "mode": "dim18_construction_and_reduction",
+  "submode": "lemma13_paired_lattice",
+  "span_dim_r": 20,
+  "inv_cosine_q": 5,
+  "marking_rank_T": 0,
+  "claimed_w2": 6,
+  "claimed_x2": 4,
+  "claimed_xw": 3,
+  "embeds_in_rank24": true
+}
