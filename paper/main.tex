@@ -95,7 +95,7 @@ For $k \in \{7, 23\}$ with irrational Bukh--Cox reciprocal bounds $L_7 = 72/(7\s
 \end{figure*}
 
 \paragraph{Mode 4: Paley Conference Matrices \& Cosine $1/7$ (\texttt{C13}--\texttt{C16}).}
-Certificates \texttt{C13}--\texttt{C15} construct the exact symmetric Paley conference matrices $C$ of orders $m = p+1$ for $p \in \{5, 13, 17\}$, verify $C^\top = C$, zero diagonal, off-diagonal $\pm 1$, and $C^2 = p I_m$, and verify Theorem~5.2's conjugate-multiplicity trace contradiction certifying $(d, N) = (9,12), (21,28), (27,36)$ at cosine $1/(1+2\sqrt{p})$ (Fig.~\ref{fig:fig3}). Certificate \texttt{C16} (and an additional unit test for $d=10$) constructs Proposition~5.3's explicit Gram matrices $8I_n - 2B + J_n$ and certifies PSD with exact ranks $10$ and $11$, proving $N_{1/7}(10)=12$ and $N_{1/7}(11)=13$.
+Certificates \texttt{C13}--\texttt{C15} construct the exact symmetric Paley conference matrices $C$ of orders $m = p+1$ for $p \in \{5, 13, 17\}$, verify $C^\top = C$, zero diagonal, off-diagonal $\pm 1$, and $C^2 = p I_m$, and verify Theorem~5.2's conjugate-multiplicity trace contradiction certifying $(d, N) = (9,12), (21,28), (27,36)$ at cosine $1/(1+2\sqrt{p})$ (Fig.~\ref{fig:fig3}). Certificate \texttt{C16} (and an additional unit test for $d=10$) constructs Proposition~5.3's explicit scaled Gram matrices $G = 8I_n - 2B + J_n$, where $B = \operatorname{diag}(J_4, J_4, J_4)$ for $n=12$ and $B = \operatorname{diag}(J_4, J_4, J_4, J_1)$ for $n=13$ (with all-ones blocks $J_k$, so $B_{ii} = 1$, diagonal $G_{ii} = 8 - 2 + 1 = 7$, off-diagonal $-1$ inside blocks and $+1$ across blocks, giving common cosine $1/7$), and certifies PSD with exact ranks $10$ and $11$, proving $N_{1/7}(10)=12$ and $N_{1/7}(11)=13$.
 
 \begin{figure*}[tb]
 \centering
@@ -123,14 +123,14 @@ ID & Mode / Submode & Key Parameters & Certified Output / Witness \\
 \texttt{C06}--\texttt{C08} & \texttt{leech} (\texttt{nested\_sections}) & $d \in \{22, 21, 20\}$ & PSD Gram ranks $22, 21, 20$; axes $176, 126, 90$ \\
 \texttt{C09}--\texttt{C12} & \texttt{fixed\_angle\_thm51} & $(q,k)\in\{(19,7),(111,23),(321,7),(5601,23)\}$ & Exact $[d_-,d_+]$ + $q=19$ Gram ranks $49,50,51$ \\
 \texttt{C13}--\texttt{C15} & \texttt{conference} (\texttt{thm52\_paley}) & $p \in \{5, 13, 17\}$, $t = 2$ & Paley $C^2=p I_{p+1}$, $(d,N)=(9,12),(21,28),(27,36)$ \\
-\texttt{C16} & \texttt{conference} (\texttt{prop53}) & $d = 11$ ($d = 10$ in pytest) & PSD Gram $8I_n-2B+J_n$, exact $\operatorname{rank}=11$ ($N=13$) \\
+\texttt{C16} & \texttt{conference} (\texttt{prop53}) & $d = 11$, $B=\operatorname{diag}(J_4^3,J_1)$ & PSD $G=8I_{13}-2B+J_{13}$ ($G_{ii}=7$), $\operatorname{rank}=11$ \\
 \bottomrule
 \end{tabular}
 \end{table*}
 
 \FloatBarrier
 \section{Reproducibility and Transparency}
-All code, Lean~4.35.0 proofs, JSON certificates, figures, and \texttt{MANIFEST.sha256} are archived at \url{https://github.com/lluiseriksson/equiangular-lines-dim18-20-certificates} (tag \texttt{v1.0.0}). Independent replay uses Lean~4.35.0 and standard-library Python~$\geq 3.10$:
+All code, Lean~4.35.0 proofs, JSON certificates, figures, and \texttt{MANIFEST.sha256} are archived at \url{https://github.com/lluiseriksson/equiangular-lines-dim18-20-certificates} (tag \texttt{v1.0.1}). Independent replay uses Lean~4.35.0 and standard-library Python~$\geq 3.10$:
 \begin{quote}\small\raggedright
 \texttt{(cd lean \&\& lake build)}\\
 \texttt{python -m} \nolinkurl{src.equiangular_dim18_20_verifier} \texttt{certificates}\\
